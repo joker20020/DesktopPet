@@ -11,6 +11,7 @@ Unity 2022.3.34f1c1
 1. 克隆当前仓库并使用Unity打开
 2. build Unity项目
 3. **将项目下`\Assets\Config`文件夹移动至build后程序的`\DesktopPet_Data`文件夹下即可运行**
+4. 鼠标左键拖动，右键打开设置菜单，拖拽文件至宠物上可以投喂（删除文件）
 
 # Note
 - 窗口的穿透点击效果使用win api实现，程序仅能在Windows下正常运行。
