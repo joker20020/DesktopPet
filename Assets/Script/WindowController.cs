@@ -105,7 +105,7 @@ public class WindowController : MonoBehaviour
         // 设置为透明、无边框
         int intExTemp = GetWindowLongPtrA(hwnd, GWL_EXSTYLE);
         int intTemp = GetWindowLongPtrA(hwnd, GWL_STYLE);
-        SetWindowLongPtrA(hwnd, GWL_EXSTYLE, (uint)intExTemp | WS_EX_LAYERED | WS_EX_ACCEPTFILES ); //| WS_EX_TOOLWINDOW
+        SetWindowLongPtrA(hwnd, GWL_EXSTYLE, (uint)intExTemp | WS_EX_LAYERED | WS_EX_ACCEPTFILES | WS_EX_TOOLWINDOW); 
         SetWindowLongPtrA(hwnd, GWL_STYLE, (uint)(intTemp & ~WS_BORDER & ~WS_CAPTION));
 
         // 全屏模式下扩展窗口到客户端区域 -> 为了透明
